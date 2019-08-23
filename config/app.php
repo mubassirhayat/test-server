@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Meveto\Providers\AppServiceProvider::class,
+        Meveto\Providers\AuthServiceProvider::class,
+        // Meveto\Providers\BroadcastServiceProvider::class,
+        Meveto\Providers\EventServiceProvider::class,
+        Meveto\Providers\RouteServiceProvider::class,
 
     ],
 
