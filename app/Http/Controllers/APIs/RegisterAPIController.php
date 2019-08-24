@@ -24,6 +24,7 @@ class RegisterAPIController extends APIBaseController
 			'public_key'	=> 'bail|required|unique:users,public_key',
 			'passphrase'	=> 'confirmed',
 		]);
+		
 		if ($validator->fails()) {
 			return $this->respondBadRequest('Validation failed for parameters please review.', $validator->errors()->toArray());
 		}
