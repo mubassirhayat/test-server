@@ -5,7 +5,6 @@ namespace Meveto\Console\Commands;
 use Illuminate\Console\Command;
 use Validator;
 use \GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
 
 class Register extends Command
 {
