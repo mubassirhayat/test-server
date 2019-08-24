@@ -19,6 +19,6 @@ class CredentialAPIController extends APIBaseController
 		$data = [
 			'server_public_key' => Storage::disk('local')->get('keys/test_key.pub'),
 		];
-		return $this->respondSuccess("Server public_key reteived.", $data);
+		return $this->respondSuccess("Server public_key retrieved.", $data);
 	}
 }
