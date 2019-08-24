@@ -4,6 +4,7 @@ namespace Meveto\Http\Controllers\APIs;
 
 use Illuminate\Http\Request;
 use Meveto\Http\Controllers\APIs\APIBaseController;
+use Meveto\Models\User;
 use Validator;
 
 class RegisterAPIController extends APIBaseController
@@ -27,6 +28,14 @@ class RegisterAPIController extends APIBaseController
 			return $this->respondBadRequest('Validation failed for parameters please review.', $validator->errors()->toArray());
 		}
 
-		
+		$user = User::create([
+			'name'			=> $request->name,
+			'email'			=> $request->email,
+			'username'		=> $request->username,
+			'public_key'	=> $request->public_key,
+			'passphrase'	=> $request->passphrase,
+		]);
+
+		return $this->respondSuccess('Registered successfully.', $user);
 	}
 }
