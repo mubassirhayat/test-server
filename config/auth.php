@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Meveto\User::class,
+            'model' => Meveto\Models\User::class,
         ],
 
         // 'users' => [

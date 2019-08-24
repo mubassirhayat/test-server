@@ -4,6 +4,7 @@ namespace Meveto\Http\Controllers\APIs;
 
 use Illuminate\Http\Request;
 use Meveto\Http\Controllers\APIs\APIBaseController;
+use Validator;
 
 class ClientSecretAPIController extends APIBaseController
 {
